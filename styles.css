@@ -1,0 +1,122 @@
+:root {
+    --background-color: #f5f7fa;
+    --text-color: #222222;
+    --heading-color: #123b5d;
+    --link-color: #0056b3;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: var(--heading-color);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--heading-color);
+}
+
+p {
+    margin-bottom: 1em;
+    color: #914848;
+}
+/* A specific rule takes precedence in CSS because it has higher specificity */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 0.2em 0.4em;
+}
+
+.note {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+.feature {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #f9f9f9;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.card {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 390px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}

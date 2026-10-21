@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My Website</title>
+</head>
+<body>
+<h1 class="feature">Welcome to Home Page</h1>
+<header>
+    <nav>
+        <ul>
+            <li><a class="highlight" href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main-content" class="card">
+<img src="images/banner.jpeg" alt="Welcome picture">
+
+    <h2>Main Content</h2>
+    <p>This is the main content area of the website.</p>
+    <section>
+        <h3>Reflection:</h3>
+        <ol>
+            <li>The most significant issue was the banner image’s fixed size in the original stylesheet. 
+                A fixed image can overflow its container on a narrow screen or look stretched. </li>
+                <li>I used <code>box-sizing: border-box</code> for all elements and set the image to <code>max-width: 100% and height: auto</code>.
+                     This lets the image shrink while keeping its proportions. 
+                     I also added media queries to adjust the card and text sizes on smaller screens.</li>
+                     <li>At 1280 pixels, the card uses 80% of the available width. At 768 and 390 pixels, 
+                        it becomes full width and the text gets smaller. The image can resize, and the navigation links remain stacked vertically.</li>
+                        <li>Comparing the layouts at different widths helps me check whether text wraps clearly, images stay within the page, 
+                            and links remain easy to use. It also showed me that a layout that looks fine on a desktop may need changes for phones.</li>
+                            <li>Next, I would add a centered container with a maximum width, 
+                                improve spacing between sections, and keep body text closer to 16 pixels on phones for easier reading.</li>
+        </ol>
+    </section>
+</main>
+    <footer class="feature">
+        <p><a href="https://github.com/ArfeelHaroon/CIS130-Week7" target="_blank">Github Repository</a></p>
+        <p>Arfeel Haroon - 2026.</p>
+    </footer>
+</body>
+</html>
